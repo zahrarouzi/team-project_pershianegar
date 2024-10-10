@@ -1,0 +1,107 @@
+/*
+متغیرها*/
+$primary-color: #701c1c; // عنابی
+$secondary-color: #00a693; // آبی فیروزه‌ای
+$background-color: #F5F5DC; // کرم ملایم
+$text-color: #333; // رنگ متن
+
+
+body {
+    font-family: Vazirmatn;
+    margin: 0;
+    padding: 0;
+    background-color: $background-color;
+    color: $text-color;
+    text-align: justify;
+    justify-content: center;
+}
+
+// استایل‌های هدر
+header {
+    background-color: $primary-color;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+
+    nav {
+        ul {
+         
+            padding: 0;
+
+            li {
+                display: inline;
+                margin: 0 1rem;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+// استایل‌های اصلی
+main {
+    padding: 2rem;
+
+    h2 {
+        color: #3C6E47; // سبز تیره
+    }
+
+    .image-placeholder {
+        width: 100%;
+        height: auto;
+        background-color: $secondary-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
+}
+
+// استایل‌های فوتر
+footer {
+    background-color: $primary-color;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+// مدیا کوئری برای موبایل
+@media (max-width: 768px) {
+    nav ul {
+        display: none; // پنهان کردن منو در حالت موبایل
+        flex-direction: column; // تغییر جهت منو به عمودی
+        width: 100%;
+        background-color: $primary-color; // رنگ پس‌زمینه منو
+    }
+
+    nav ul.active {
+        display: flex; // نمایش منو در حالت فعال
+    }
+
+    nav ul li {
+        margin: 1rem 0; // فاصله عمودی بین آیتم‌ها
+    }
+
+    #menu-toggle {
+        display: block; // نمایش دکمه همبرگری
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

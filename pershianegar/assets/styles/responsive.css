@@ -1,0 +1,47 @@
+/* مدیا کوئری برای موبایل */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* پنهان کردن منو در حالت موبایل */
+        flex-direction: column; /* تغییر جهت منو به عمودی */
+        width: 100%;
+        background-color: #701c1c; /* رنگ پس‌زمینه منو */
+    }
+
+    nav ul.active {
+        display: flex; /* نمایش منو در حالت فعال */
+    }
+
+    nav ul li {
+        margin: 1rem 0; /* فاصله عمودی بین آیتم‌ها */
+    }
+
+    #menu-toggle {
+        display: block; /* نمایش دکمه همبرگری */
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/*
+@media (min-width:769px ){
+ 
+    ul :nth-child(7){
+        display: none;
+    }
+    ul :nth-child(6){
+        display: none;
+    } ul :nth-child(5){
+        display: none;
+    }
+     ul :nth-child(9){
+    display: none;
+    }
+}

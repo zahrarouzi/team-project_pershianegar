@@ -1,0 +1,20 @@
+nav ul li a:hover {
+    color: #FFD700; /* رنگ طلایی برای حالت هاور */
+}
+.content-box:hover {
+    transform: translateY(-5px); /* انیمیشن جابجایی */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* سایه  */
+}
+.cta-button:hover {
+    background-color: #FFD700; /* رنگ تیره‌تر برای حالت هاور */
+    transform: scale(1.05); /* انیمیشن بزرگ شدن */
+    color: #000;
+}
+.cta-button{
+    transition: background-color 0.3s, transform 0.3s; /* انیمیشن */
+
+}
+.content-box{
+    transition: transform 0.3s, box-shadow 0.3s; /* انیمیشن */
+
+}

@@ -1,0 +1,213 @@
+
+body {
+    font-family:vazirmatn;
+    background-color: #F5F5DC; /* رنگ پس‌زمینه کرم ملایم */
+    color: #333; /* رنگ متن */
+    line-height: 1.6; /* فاصله بین خطوط */
+text-align: center;
+}
+
+header {
+    background-color: #701c1c; /*رنگ عنابی ایرانی  */
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    position: relative;
+}
+.menu-toggle{
+  background-color: #701c1c;
+  border: #701c1c;
+  color: #701c1c;
+}
+span{
+    color: #FFD700;
+    font-size: large;
+}
+header h1 { 
+    color: #FFD700;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    overflow: hidden;
+    display: inline;
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* رنگ طلایی برای حالت هاور */
+}
+
+main {
+    padding: 2rem;
+}
+h2 {
+    width: 100%;
+   background-color: #00a693;
+     box-shadow: 0 4px 10px rgba(0, 166, 147, 0.01);
+    color: #123a1a; /* رنگ سبز تیره */
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    border-bottom: 2px solid #00a693; /* خط زیر عنوان */
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    width: 100%;
+    background-color: #00a693;
+     box-shadow: 0 4px 10px rgba(0, 166, 147, 0.01);
+    color: #123a1a; /* رنگ سبز تیره */
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    border-bottom: 2px solid #00a693; /* خط زیر عنوان */
+    padding-bottom: 0.5rem;
+}
+
+.content-box {
+    background-color: #ca7225;/* رنگ آبی فیروزه‌ای کم‌رنگ */
+    border: 1px solid #00a693; /* رنگ آبی فیروزه‌ای */
+    padding: 1.5rem;
+    border-radius: 10px; /* گوشه‌های گرد */
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* سایه ملایم */
+    transition: transform 0.3s, box-shadow 0.3s; /* انیمیشن */
+}
+
+.content-box:hover {
+    transform: translateY(-5px); /* انیمیشن جابجایی */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* سایه  */
+}
+
+.cta-button {
+    background-color: #701c1c; /* عنابی ایرانی*/
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px; /* گوشه‌های گرد */
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s; /* انیمیشن */
+}
+
+.cta-button:hover {
+    background-color: #FFD700; /* رنگ تیره‌تر برای حالت هاور */
+    transform: scale(1.05); /* انیمیشن بزرگ شدن */
+    color: #000;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: auto; 
+    background-color: #00a693; /* رنگ آبی فیروزه‌ای */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.8rem; 
+    margin: 1.5rem 0;
+    border-radius: 10px; /* گوشه‌های گرد */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* سایه ملایم */
+}
+.image-placeholderrow{
+    width: 100%;
+    height: auto; 
+    background-color: #00a693; /* رنگ آبی فیروزه‌ای */
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+    justify-content:center;
+        color: white;
+    font-size: 1.8rem; 
+    margin: 1.5rem 0;
+    border-radius: 10px; /* گوشه‌های گرد */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* سایه ملایم */
+}
+footer {
+    background-color: #701c1c; /*رنگ عنابی ایرانی*/
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2rem; /* فاصله از محتوا */
+}
+.social{
+    font-size: large;
+    color: #FFD700;
+    display: flex;
+    flex-direction: row;
+   
+  
+ 
+}
+.s1,.s2,.s3{
+    width: 4%;
+    height: auto;
+    padding: 1.6rem;
+}
+
+/* مدیا کوئری برای موبایل */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* پنهان کردن منو در حالت موبایل */
+        flex-direction: column; /* تغییر جهت منو به عمودی */
+        width: 100%;
+        background-color: #701c1c; /* رنگ پس‌زمینه منو */
+    }
+
+    nav ul.active {
+        display: flex; /* نمایش منو در حالت فعال */
+    }
+
+    nav ul li {
+        margin: 1rem 0; /* فاصله عمودی بین آیتم‌ها */
+    }
+
+    #menu-toggle {
+        display: block; /* نمایش دکمه همبرگری */
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/*
+@media (min-width:769px ){
+ 
+    ul :nth-child(7){
+        display: none;
+    }
+    ul :nth-child(6){
+        display: none;
+    } ul :nth-child(5){
+        display: none;
+    }
+     ul :nth-child(9){
+    display: none;
+    }
+}
